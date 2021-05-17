@@ -381,7 +381,7 @@ func TestIndexPacks(t *testing.T) {
 	rtest.Assert(t, packs.Equals(idxPacks), "packs in index do not match packs added to index")
 }
 
-const maxPackSize = 16 * 1024 * 1024
+const maxPackSize = 20 * 1024 * 1024
 
 // This function generates a (insecure) random ID, similar to NewRandomID
 func NewRandomTestID(rng *rand.Rand) restic.ID {

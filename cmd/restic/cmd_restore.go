@@ -187,6 +187,7 @@ func runRestore(opts RestoreOptions, gopts GlobalOptions, args []string) error {
 		Printf("Skip Unchanged True\n")
 	}
 
+	Verbosef("running restore with modified pack size\n")
 	Verbosef("restoring %s to %s\n", res.Snapshot(), opts.Target)
 
 	if opts.Delete {
